@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.card {
+    margin: 20px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    border: solid 1.5px #000;
+    box-shadow: 5px 5px;
+}
+
+.Blog-image svg {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+}
+
+.card-content {
+    flex-direction: column;
+    flex-flow: column;
+    font-family: "Figtree", sans-serif;
+}
+
+.Category {
+    background-color: hsl(47, 88%, 63%);
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: inline-block;
+    font-family: "Figtree", sans-serif;
+}
+
+.published-date {
+    color: #000000;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: "Figtree", sans-serif;
+}
+
+h2 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 900;
+    color: #000;
+    font-family: "Figtree", sans-serif;
+}
+
+h2:hover {
+    color: hsl(47, 88%, 63%);
+}
+
+.description {
+    font-size: 16px;
+    color: hsl(0, 0%, 42%);
+    margin-bottom: 20px;
+    flex-grow: 1;
+    line-height: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.author-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.author-name {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 900;
+    padding-left: 15px;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 480px) {
+    .card {
+        padding: 1em;
+        margin: 10px;
+        max-width: 80%;
+        border-radius: 20px;
+    }
+
+    .Category, .published-date, h2, .description, .author-name {
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .author-avatar {
+        width: 28px;
+        height: 28px;
+    }
+
+    .author-name {
+        padding-left: 10px;
+    }
+}
